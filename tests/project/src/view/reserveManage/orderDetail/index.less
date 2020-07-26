@@ -1,0 +1,135 @@
+.detail-page {
+  .order-detail {
+    .order-button-group {
+      text-align: right;
+    }
+    .order-detail-btn {
+      margin-left: 10px;
+      display: inline-block;
+      width: 88px;
+      line-height: 32px;
+      font-family: PingFangSC-Medium;
+      font-size: 14px;
+      color: #448AFF;
+      letter-spacing: 0.5px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.24);
+      border-radius: 2px;
+      text-decoration: none;
+    }
+    .order-detail-btn:hover {
+      text-decoration: none;
+    }
+    .table-detail {
+      .ant-table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .ant-btn {
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #448AFF;
+        background: none;
+        border: none;
+        padding: 0;
+      }
+    }
+    .card-all-row{
+      .ant-col-8{
+        width: 100%;
+        .detail-windingInfo{
+          overflow: hidden
+        }
+      }
+    }
+
+    .yjfw{
+      .ant-card-body:after{
+        content:'';
+        display:table;
+        clear:both;
+      }
+    }
+  }
+
+  .app-label-content {
+    max-width: 80%;
+  }
+
+  &-action {
+    position: absolute;
+    top: -55px;
+    right: 20px;
+  }
+
+  .detail-actions-container {
+    text-align: center;
+    margin-top: 40px;
+    .action-btn {
+      width: 120px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 36px;
+      color: #FFF;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24);
+      padding: 0;
+      margin: 0 12px;
+    }
+  }
+  .primary-color {
+    background: #448AFF;
+  }
+  .red-color {
+    background: #FF4848;
+  }
+}
+
+.ant-modal {
+  &-body {
+    .modal-family-info {
+      font-size: 12px;
+      color: #333;
+      line-height: 28px;
+      .user-card {
+        flex: 1;
+      }
+      .family-info-list {
+        display: flex;
+        .user-name {
+          min-width: 110px;
+          max-width: 145px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.reject-modal {
+  .form-action-button-wrapper {
+    text-align: right;
+    margin-right: 15%;
+    .ant-btn {
+      margin-left: 20px;
+    }
+  }
+  .ant-form-explain{
+    margin-left: 15%;
+  }
+}
+
+.detail-content-wrapper {
+  position: relative;
+  .house-list-agent-avatar {
+    position: absolute;
+    right: 75px;
+    top: 50px;
+    .avatar-img {
+      height: 100px;
+    }
+  }
+}

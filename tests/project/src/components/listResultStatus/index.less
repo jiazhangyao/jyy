@@ -1,0 +1,29 @@
+@lrs-prefix: list-result-status;
+@label-color:#999;
+.@{lrs-prefix}{
+  height: 250px;
+  position: relative;
+  top: 100px;
+  &-warn-wrapper {
+    width: 400px;
+    height: 176px;
+    margin: auto;
+  }
+
+  &-image,.search-empty {
+    margin: auto;
+    width: 240px;
+    background-repeat: no-repeat;
+    height: 176px;
+    background: url('./img/placeholder_empty@2x.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  &-label {
+    font-size: 12px;
+    color: @label-color;
+    font-weight: normal;
+    line-height: 46px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,148 @@
+@import "~variable.less";
+
+@prefixCls: edit-page;
+
+.edit-page-content {
+  .mt-card {
+    padding: 24px;
+    padding-bottom: 0;
+    margin: 0;
+    & * {
+      color: #333;
+      font-size: 12px;
+    }
+    .ant-card-body .mt-card-row {
+      padding-bottom: 0;
+      .ant-form-item-label {
+        line-height: 32px;
+      }
+
+      .ant-select-selection, .ant-input {
+        border: none;
+        border-bottom: 1px solid #DFDFDF;
+        border-radius: initial;
+      }
+      .ant-select {
+        .ant-select-selection {
+          .anticon * {
+            color: @page-color;
+            font-size: 12px;
+          }
+
+          &:active {
+            box-shadow: none;
+          }
+        }
+
+        .ant-select-selection__rendered {
+          margin: 0;
+        }
+        .ant-select-selection__placeholder, .ant-select-search__field__placeholder {
+          color: #333;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 9px;
+          line-height: 20px;
+          height: 20px;
+          max-width: 100%;
+          margin-top: -10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: left;
+          margin-left: 0;
+        }
+        .ant-select-selection--multiple {
+          .ant-select-selection__choice {
+            color: #333;
+            font-size: 12px;
+            background-color: #f3f3f3;
+            border-radius: 4px;
+            cursor: default;
+            float: left;
+            margin-right: 4px;
+            max-width: 99%;
+            position: relative;
+            overflow: hidden;
+            transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            padding: 0 20px 0 10px;
+            height: 24px;
+            line-height: 24px;
+            border: none;
+          }
+          .ant-select-selection__choice__remove {
+            color: @page-color;
+            font-size: 12px;
+            font-style: normal;
+            vertical-align: baseline;
+            text-align: center;
+            text-transform: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            //color: rgba(0, 0, 0, 0.43);
+            line-height: inherit;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            display: inline-block;
+            font-size: 8px \9;
+            transform: scale(0.66666667) rotate(0deg);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+            zoom: 1;
+            position: absolute;
+            right: 4px;
+            padding: 0 0 0 8px;
+          }
+        }
+      }
+      .ant-input {
+        height: 32px;
+        border: none;
+        border-color: #f1f1f1;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.edit-actions-container {
+  padding: 30px 0 40px;
+  text-align: center;
+  .mt-button:first-child {
+    margin-left: 0;
+  }
+  .mt-button {
+    margin-left: 24px;
+  }
+}
+
+.has-error .ant-form-explain, .has-error .ant-form-split {
+  // color: #D05538;
+  color: @form-explain-error;
+}
+
+.ant-form-item-required:before {
+  display: none;
+}
+
+.ant-form-item-label .ant-form-item-required:after {
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 4px;
+  content: "*";
+  font-family: SimSun;
+  line-height: 22px;
+  font-size: 12px;
+  color: #f04134;
+  vertical-align: top;
+  top: 7px;
+}
+
+input::-webkit-input-placeholder {
+  color: #999 !important;
+}

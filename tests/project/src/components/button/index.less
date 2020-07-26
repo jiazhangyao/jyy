@@ -1,0 +1,32 @@
+    @import "~variable.less";
+    @mtButton:mt-button;
+    .@{mtButton}{
+      font-weight: 500;
+      display: inline-block;
+      border-radius: 2px;
+       margin-left: 24px; 
+       border-radius: 2px;
+       &:first-child{
+        margin-left: 0;
+      }
+    }
+    .@{mtButton}{
+      .ant-form-item-height-width(36px,120px);
+      font-size: 14px;
+    }
+    .@{mtButton}.ant-btn-lg{
+      .ant-form-item-height-width(32px,88px);
+      font-size: 13px;
+    }
+    .@{mtButton}.ant-btn-sm{
+      .ant-form-item-height-width(26px,60px);
+      font-size: 12px;
+    }
+    .@{mtButton}[disabled]{
+        color: @btn-disabled-color;
+        background:@button-disabled-background;
+        border: none;
+        box-shadow: none;
+      }
+  
+  

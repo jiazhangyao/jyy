@@ -1,0 +1,381 @@
+.scdj-page{
+  .ant-table-filter-icon {
+    color: #cc6600 !important;
+  }
+  .ant-card-extra{
+    padding: 0;
+    width: 70%;
+    p{
+      float: left;
+      padding: 5px;
+      color: red;
+    }
+    button{
+      float:right;
+      color: #448AFF;
+    }
+  }
+  .extra-part {
+    .ant-card-extra;
+    width: 100%;
+    text-align: center;
+    p {
+      float: none;
+    }
+  }
+  .table-detail-title{
+    font-size: 12px;
+    color: #333;
+    margin: 0 0 20px;
+  }
+
+  .askInfo{
+    h3{
+      font-size: 16px;    
+      margin-bottom: 10px;
+    }
+
+    .container{
+      background: #f9fbff;
+      padding: 14px 28px;
+
+      p,.ownerName{
+        padding: 10px;
+      }
+      .ownerName{
+        color: rgb(68, 138, 255);
+        cursor: pointer;
+      }
+
+      .answer{
+        margin-left: 20px;
+      }
+
+    }
+  }
+
+  .forFont{
+    font-size: 16px;  
+  }
+
+  .detailForm{
+    overflow: hidden;
+
+    .ant-form-item{
+      overflow: hidden;
+      float: left;
+      width: 25%;
+
+      .ant-form-item-label,.ant-form-item-control-wrapper{
+        float: left;
+      }
+
+      .ant-input-suffix{
+        right: -18px;
+      }
+      
+    }
+  }
+}
+.passMod{
+  .ant-form{
+    overflow: hidden;
+   
+    .ant-form-item{
+      overflow: hidden;
+      float: left;
+      width: 100%;
+      .ant-form-item-label,.ant-form-item-control-wrapper{
+        float: left;
+      }
+      textarea{
+        width: 350px;
+      }
+      .ant-select{
+        width: 180px;
+      }
+      .ant-calendar-picker{
+        width: 200px;
+      }
+    }
+
+    .mod_right{
+      width: 40%;
+      margin-top: 5px;
+    }
+
+    .mod_left{
+      width: 60%;
+      .ant-radio-group{
+        overflow: hidden;
+        margin-top: 10px;
+        .ant-radio-wrapper{
+          float: left;
+        }
+      }
+    }
+
+    .title_p{
+      font-size: 16px;
+      font-weight: bold;
+      color: #333333;
+    }
+    .mar_top10{
+      .ant-form-item-control-wrapper{
+        margin-top: 10px;
+      }
+    }
+    .mar_top5{
+      .ant-form-item-control-wrapper{
+        margin-top: 5px;
+      }
+    }
+  }
+  .tips{
+    color: #999999;
+    font-size: 14px;
+    float: left;
+  }
+}
+.rejectMod{
+  .ant-modal-body{
+    .ant-form{
+      overflow: hidden;
+      .ant-form-item:nth-child(1),.ant-form-item:nth-child(2){
+        float: left;
+      }
+      .ant-form-item:nth-last-child(1){
+        float: left;
+        color: red;
+      }
+      .ant-form-item:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+  
+  }
+}
+.ownerModel{
+  .ant-confirm-body {
+    .anticon{
+      display: none;
+    }
+    .ant-confirm-content{
+      margin-top: 10px;
+    }
+
+    .ant-confirm-content,.ant-confirm-title{
+      text-align: center;
+    }
+  }
+  .ant-confirm-btns{
+    margin-top: 4px;
+  }
+}
+
+// 本次交易信息line
+#thisTradeInfo {
+  padding: 28px 0;
+  font-size: 18px;
+  font-weight: bold;
+
+  .statusInfoBtn {
+    float: right;
+    color: @primary-color;
+    margin-left: 12px;
+  }
+}
+
+// 上链状态card
+.detail-page .card-chain-row .ant-col-8 {
+  width: 100%;
+
+  .detail-windingInfo {
+    overflow: hidden;
+
+    .windingItem {
+      width: 33%;
+    }
+  }
+}
+
+// 产权信息card
+.property-right-info .ant-col-8 {
+  width: 100%;
+  padding-right: 0 !important;
+
+  .col-item {
+    display: inline-block;
+    width: 33.3%;
+    padding-bottom: 12px;
+  }
+}
+
+.detail-img-wrap .img-wrap {
+  width: 178px;
+  height: 146px;
+}
+
+.pics-list-wrap {
+  .ant-card-body {
+    flex-direction: column;
+    .col-item{
+      float: left;
+    }
+  }
+  .pics-list-item {
+    width: 100%;
+    
+    .no-file {
+      display: inline-block;
+      .img-wrap {
+        background: #fff;
+        position: relative;
+        border: 1px solid #bbb;
+        padding: 2px;
+        width: 178px;
+        height: 146px;
+        margin-right: 12px;
+      }
+      .title {
+        text-align: center;
+        width: 100%;
+        z-index: 99;
+        background: #fff;
+      }
+    }
+    .col-item .pics-tit {
+      width: 100%;
+      padding-right: 12px;
+    }
+  }
+}
+
+.sp-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sp-btn-pro {
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: #448aff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.notice-container {
+  margin: 25px 0;
+}
+// 提示文本样式
+#syncInfo {
+  color: red;
+  text-align: center;
+  padding: 28px 0 ;
+  .text {
+      display: inline-block;
+      height: 35px;
+      padding: 0px 200px ;
+      border: 1px solid #000;
+      line-height: 35px;
+      font-weight: normal;
+      font-size: 14px;
+  }
+  .syncInfo_tdxx {
+      float: left;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000;
+  }
+  .tbBtn {
+      border-color: #448AFF;
+      float: right;
+  }
+}
+.zzBtn,.zzBtn:hover,.zzBtn:active,.zzBtn:focus {
+  background-color: #f60;
+  color: #fff;
+}
+
+.pics-wrap>div {
+  float: left;
+}
+
+.forDetailTable .table-detail .ant-btn.table-btn {
+  padding: 10px;
+  height: auto;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.24);
+  font-size: 14px;
+}
+.red {
+  color: red;
+  clear: both;
+}
+
+.step-container {
+  background: #fff;
+  .step {
+    background: #f9f9f9;
+  }
+}
+
+
+.file-contenter {
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  width: 120px;
+  height: 90px;
+  padding: 21px 0;
+  position: relative;
+  cursor: pointer;
+  .pdf-icon {
+    width: 40px;
+    height: 48px;
+    margin: auto;
+    img{
+      width: 40px;
+      height: 48px;
+      margin: auto;
+    }
+  }
+  &:hover .pdf-download {
+    display: inline-block;
+  }
+  .pdf-download {
+    display: none;
+    text-align: center;
+    background: rgba(0,0,0,0.50);
+    width: 118px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    a {
+      font-size: 12px;
+      color: #FFFFFF;
+      line-height: 25px;
+    }
+  }
+}
+.file-name {
+  cursor: pointer;
+  max-width: 112px;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  margin: auto;
+}

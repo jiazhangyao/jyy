@@ -1,0 +1,168 @@
+.dashBoardChart {
+  position: relative;
+  background-color: '#f0f2f5';
+  padding: '20px';
+  .chartBox{
+    justify-content: space-between;
+    .ant-card{
+      margin-top: 0;
+    }
+  }
+  .dashboard-sel .ant-select-selection{
+    border: 1px solid #dfdfdf;
+    height: 25px;
+    line-height: 25px;
+    .ant-select-selection__rendered{
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+  .trading-box{
+    background-color: white;
+    height: 400px;
+  }
+  .tradingTitle {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 16px 20px 20px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .axisTitle {
+    display: inline-block;
+    width: 100%;
+    padding: 0 38px 0 38px;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: -0.07px;
+  }
+  .squareInfo {
+    width: 5px;
+    height: 5px;
+    margin: 10px 13px 10px 0;
+    background-color: #2d8afb;
+    display: inline;
+    float: left;
+  }
+  .tradingLegend {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    >div {
+      margin-right: 20px;
+    }
+    padding: 20px 0 30px 0;
+  }
+  .tradingLegendBar {
+    border: 1px solid #2d8afb;
+    width: 24px;
+    height: 0px;
+    border-radius: 2px;
+  }
+  .blockLegendBar {
+    border: 1px solid #00b067;
+    width: 24px;
+    height: 0px;
+    border-radius: 2px;
+  }
+  .vertical-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tradingAveBar {
+    color: #2d8afb
+  }
+  .blockAveBar {
+    color: #00b067
+  }
+
+  #infoCard {
+    width: 100%;
+    .ant-card-body {
+      padding: 0;
+    }
+    .ant-col-8{
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+  }
+  .cardContent {
+    display: flex;
+    height: 158px;
+    flex-direction: column;
+    align-items: stretch;
+    >div{
+      padding: 16px 0 0 20px;
+    }
+    .cardTitle {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333333;
+      line-height: 25px;
+    }
+
+    .cardMainInfo {
+      color: #448AFF;
+      font-size: 36px;
+      font-weight: bold;
+      padding-top: 0;
+      margin-top: 10px;
+      .cardMainInfoSmall {
+        font-weight: normal;
+        font-size: 13px;
+        color: #448AFF;
+      }
+    }
+    .cardSummary {
+      font-size: 13px;
+      color: #333333;
+    }
+
+  }
+  .boxShadow {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.15);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  .pngBox {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100px;
+    }
+    span{
+      font-size: 15px;
+      color: #d2d2d2;
+    }
+  }
+  .noData {
+    text-align: center;
+    font-size: 15px;
+    color: #d2d2d2;
+    height: 143px;
+    display: inline-block;
+    line-height: 72px;
+  }
+  th:last-child {
+    border-right: 1px solid #eeeeee;
+  }
+  td:last-child {
+    border-right: 1px solid #eeeeee;
+  }
+  .ant-table-tbody > tr > td {
+    border-right: 0;
+  }
+  .ant-table-thead > tr > th {
+    border-right: 0;
+  }
+}

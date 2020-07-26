@@ -1,0 +1,24 @@
+.row-breadcrumb{
+  height: @bread-crump-height;
+
+  .page-bread-crumb {
+    display: inline-block;
+
+    .ant-breadcrumb {
+      line-height: @bread-crump-height;
+      color: @bread-crump-color;
+
+      a, span:last-child {
+        color: @bread-crump-color;
+      }
+      a:hover{
+        color: @primary-color
+      }
+    }
+  }
+
+  .breadcrumb-action {
+    float: right;
+    line-height: @bread-crump-height;
+  }
+}

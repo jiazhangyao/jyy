@@ -1,0 +1,51 @@
+@import "~variable.less";
+@prefixCls: header-klass;
+
+@headerBoxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+.@{prefixCls} {
+  background: @primary-color;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-width: @sys-min-width;
+  box-shadow: @headerBoxShadow;
+  &-logo {
+    height: 100%;
+    float: left;
+    margin-left: 8px;
+    img {
+      height: 100%;
+    }
+  }
+  &-title {
+    float: left;
+    .app-font-family(PingFangSC-Medium);
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0.57px;
+  }
+  &-user {
+    float: right;
+    height: 100%;
+    padding-right: 24px;
+    &-info {
+      .app-font-family(PingFangSC-Semibold);
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: 0.43px;
+      text-align: right;
+      padding-right: 16px;
+      font-weight: 700;
+    }
+    &-logout {
+      background: transparent;
+      .app-font-family(PingFangSC-Regular);
+      font-size: 12px;
+      color: #ffffff;
+      letter-spacing: 0.43px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.cpn-imagesuploader{
+  overflow: hidden;
+  font-size: 12px;
+  &-filelist{
+    &-item{
+      margin: 0 12px 12px 0;
+      float: left;
+      position: relative;
+      border: 1px solid #dfdfdf;
+      .tips-uploading{
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -15px;
+        margin-left: -40px;
+      }
+      &-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      &-action{
+        position: absolute;
+        bottom: 0;
+        left: -1px;
+        right: -1px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        cursor: pointer;
+      }
+      &-del{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        cursor: pointer;
+      }
+      &-tag{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background-color: #448AFF;
+        color: #fff;
+        width: 44px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+      }
+    }
+    .ant-upload-list{
+      display: none;
+    }
+  }
+  &-action{
+    float: left;
+    overflow: hidden;
+    .icon-upload-wrap{
+      padding-top: 6px;
+      .iconfont{
+        font-size: 24px;
+      }
+    }
+    p{
+      padding: 0 22px;
+      line-height: 18px;
+    }
+  }
+  .ant-upload.ant-upload-drag .ant-upload {
+      padding: 0;
+  }
+}

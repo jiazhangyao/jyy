@@ -1,0 +1,9 @@
+{
+  "extends": "react-app",
+  "globals": {
+    "ROOT_PATH": true,
+    "BMap": true,
+    "location": true,
+    "$": true
+  }
+}

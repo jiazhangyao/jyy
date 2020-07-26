@@ -1,0 +1,46 @@
+.row-card-box {
+	padding: 52px 0 0;
+	width: 272px;
+	height: 386px;
+  background: #F9FBFF;
+	border-radius: 6px;
+	box-sizing: border-box;
+	.row-card-img {
+		display: block;
+		margin: 0 auto 28px;
+		width: 154px;
+		img {
+			width: 100%;
+		}
+	}
+	.row-card-title {
+		position: relative;
+		display: block;
+		margin-bottom: 24px;
+		text-align: center;
+		font-size: 18px;
+		color: @unit-color;
+	}
+	.row-card-title:after {
+		content: '';
+		position: absolute;
+		bottom: -6px;
+		left: 50%;
+		z-index: 1;
+		margin-left: -19px;
+		width: 38px;
+		height: 3px;
+		background: @processing-color;
+
+	}
+	.row-card-content {
+		display: block;
+		margin: 0 auto;
+		width: 190px;
+		font-size: 13px;
+		color: @page-color;
+		letter-spacing: 0.46px;
+		text-align: justify;
+		line-height: 28px;
+	}
+}

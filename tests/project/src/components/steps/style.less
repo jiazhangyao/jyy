@@ -1,0 +1,273 @@
+@grayColor:#666;
+@grayBorder:#ccc;
+@line:2px;
+@backgroundColor:#3f87ff;
+@rejectedColor:#D50000;
+.step-container{
+  overflow: auto;
+  background: #F9F9FB;
+  width: 100%;
+  min-height: 120px;
+  text-align: center;
+  margin-bottom: 12px !important;
+  //box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  /*滚动条样式*/
+  &::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 8px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    background: rgba(97, 94, 94, 0.2);
+  }
+  &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 0.5px rgba(0,0,0,0);
+    border-radius: 0;
+    background: #FFFFFF;
+  }
+  &::-webkit-scrollbar-thumb:hover {/*滚动条鼠标移上去*/
+    background-color:#bbb;
+  }
+  .step {
+    min-width: 960px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color:@grayColor;
+    display: inline-block;
+
+    .pretrial-item-title {
+      position: relative;
+      display: inline-block;
+      vertical-align: -28px;
+      line-height: 1.35;
+      width: 62px;
+      font-size: 12px;
+      text-align: center;
+      color: @grayColor;
+      //描述省略号展示
+      .title-show {
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      //描述不换行展示
+      .title-nowrap {
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .icon-des-text{
+        height: 15px;
+        line-height: 15px;
+        margin-top: -3px;
+      }
+      .icon-circle {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-top: 6px;
+      }
+      &.no-date {
+        vertical-align: middle;
+      }
+      .icon-todo{
+          color:@grayColor;
+          // vertical-align: -18px;
+          background: url(./img/todo.png) no-repeat center;
+          background-size: cover;
+      }
+      .icon-end{
+        font-size: 22px;
+        vertical-align: 3px;
+        color: @rejectedColor;
+      }
+      .icon-pendding{
+        color:@grayColor;
+        background: url(./img/padding.png) no-repeat center;
+        background-size: cover;
+      }
+      .icon-rejected {
+        color:@rejectedColor;
+        background: url(./img/rejected.png) no-repeat center;
+        // background: url(./img/todo.png) no-repeat center;
+        background-size: cover;
+      }
+      //新加 25的 样式
+      .icon-rejectedtwo {
+        color:@rejectedColor;
+        // background: url(./img/rejected.png) no-repeat center;
+        background: url(./img/padding.png) no-repeat center;
+        background-size: cover;
+      }
+      .icon-finished {
+        color:@backgroundColor;
+        background: url(./img/finished.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .step-finished{
+      color: #448AFF;
+    }
+
+    .pretrial-item-line-child {
+      display: inline-block;
+      width: 16%;
+      height: @line;
+      background: @grayBorder;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 10px;
+    }
+    .pretrial-item-line-right{
+      display: inline-block;
+      margin-right: 20px;
+      .pretrial-item-line-right-top{
+        display: inline-block;
+        width: 50px;
+        height: 37px;
+        border: @line solid @grayBorder;
+        border-bottom: none;
+        border-left: none;
+        margin-bottom: 10px;
+        margin-left: 22px;
+      }
+      .pretrial-item-line-right-bottom{
+        display: inline-block;
+        width: 50px;
+        height: 32px;
+        border: @line solid @grayBorder;
+        border-top: none;
+        border-left: none;
+        margin-bottom: -20px;
+        margin-left: -50px;
+      }
+      .pretrial-item-line-right-line{
+        display: inline-block;
+        width: 0;
+        height: @line;
+        background: @grayBorder;
+        margin-bottom: 11px;
+      }
+    }
+    .pretrial-item-line-left{
+      display: inline-block;
+      .pretrial-item-line-left-top{
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border: @line solid @grayBorder;
+        border-bottom: none;
+        border-right: none;
+        margin-bottom: 7px;
+      }
+      .pretrial-item-line-left-bottom{
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border: @line solid @grayBorder;
+        border-top: none;
+        border-right: none;
+        margin-bottom: -20px;
+      }
+      .pretrial-item-line-left-line{
+        display: inline-block;
+        width: 0;
+        height: @line;
+        background: @grayBorder;
+        margin-bottom: 11px;
+      }
+    }
+    .pretrial-item-line-vertical {
+      display: inline-block;
+      text-align: center;
+      width: 50px;
+      height: 35px;
+      border: @line solid @grayBorder;
+      position: relative;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+      margin-left: 20px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      .pretrial-item-title {
+        width:62px;
+        position: absolute;
+        z-index: 5;
+        right: -42px;
+        top: -20px;
+      }
+    }
+
+    .pretrial-item-line-vertical-frist {
+      display: inline-block;
+      text-align: center;
+      width: 50px;
+      height: 37px;
+      border: @line solid @grayBorder;
+      position: relative;
+      border-bottom: none;
+      border-right: none;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      .pretrial-item-title {
+        width:62px;
+        position: absolute;
+        right: -40px;
+        top: -20px;
+      }
+    }
+
+    .lazyland-item-line-vertical-frist {
+      display: inline-block;
+      text-align: center;
+      width: 50px;
+      height: 32px;
+      border: @line solid @grayBorder;
+      position: relative;
+      border-top: none;
+      border-right: none;
+      margin-bottom: -20px;
+      margin-left: -50px;
+      font-size: 14px;
+      .pretrial-item-title{
+        position: absolute;
+        right: -40px;
+        top: 12px;
+      }
+    }
+
+    .lazyland-item-line-vertical {
+      display: inline-block;
+      text-align: center;
+      width: 50px;
+      height: 30px;
+      border: @line solid @grayBorder;
+      position: relative;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      margin-bottom: -20px;
+      margin-left: -50px;
+      font-size: 14px;
+      .pretrial-item-title{
+        position: absolute;
+        z-index: 5;
+        right: -42px;
+        top: 10px;
+      }
+    }
+
+    /*变成蓝色的样式*/
+    .become-blue-background{
+      background:@backgroundColor!important;
+    }
+    .border-blue{
+      border-color:@backgroundColor!important;
+    }
+    .border{
+      border:@line solid @backgroundColor!important;
+    }
+  }
+}

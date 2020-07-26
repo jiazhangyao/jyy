@@ -1,0 +1,37 @@
+@clsPrefix:block-search-page;
+.@{clsPrefix}{
+  .list-page{
+    &-body{
+        .ant-form-item{
+            &-label{
+              display: block;
+              text-align: left;
+            }
+            .ant-select-selection{
+              border-radius:0px;
+              border: none;
+              border-bottom: 1px solid @input-btn;
+            }
+        }
+        .button{
+          display: inline-block;
+          margin-top: 42px;
+        }
+        tr.ant-table-expanded-row{
+          .ant-table-wrapper {
+            .ant-table-tbody tr.ant-table-row:hover td{
+            background:#F0F8FD;
+          }
+          }
+          &:hover > td {
+            background:#fff;
+          }
+          background:#fff;
+        }
+        tr.ant-table-expanded-row table{
+          background: #FFF;
+          margin: 12px 0 12px 5px;
+        }
+    }
+  }
+}

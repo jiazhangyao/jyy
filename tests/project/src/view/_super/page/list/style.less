@@ -1,0 +1,242 @@
+@import "~variable.less";
+@prefixCls: list-page;
+
+.@{prefixCls} {
+  //padding-bottom: 36px;
+  .row-breadcrumb{
+    height: @bread-crump-height;
+    .ant-breadcrumb{
+      line-height: @bread-crump-height;
+    }
+  }
+  &-crumb {
+    height: @bread-crump-height;
+
+    .page-bread-crumb {
+      display: inline-block;
+
+      .ant-breadcrumb {
+        line-height: @bread-crump-height;
+        color: @bread-crump-color;
+
+        a, span:last-child {
+          color: @bread-crump-color;
+        }
+        a:hover{
+          color: @primary-color
+        }
+      }
+    }
+
+    &-action {
+      float: right;
+      line-height: @bread-crump-height;
+    }
+  }
+  &-tab {
+    .ant-tabs-bar.ant-tabs-top-bar {
+      .list-page-bg();
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      margin-bottom: 12px;
+      .ant-tabs-tab{
+        line-height: 28px;
+        color: #666;
+        margin: 0 0 0 24px;
+        padding: 12px 0;
+      }
+      .ant-tabs-tab-active{
+        color: @primary-color;
+      }
+    }
+  }
+  &-body {
+    .list-page-bg();
+    min-height: 500px;
+    padding: 14px 24px 24px;
+    //filter list
+    .ant-form {
+      &-item {
+        display: inline-block;
+        margin-right: 12px;
+        margin-bottom: 0px;
+        &-label{
+          vertical-align: top;
+        }
+        &-label label{
+          font-size: 12px;
+        }
+        .search-wrapper-content-input,.search-wrapper-content-input:focus{
+          box-shadow:none;
+          .ant-form-item-height(24px);
+          border: none;
+          border-bottom: 1px solid @input-btn;
+        }
+        &-control-wrapper{
+          display: inline-block;
+          .has-success{
+             .search-wrapper-content{
+               &-input:focus{
+                 border-bottom: 1px solid @primary-color;
+               }
+             }
+          }
+           .ant-calendar-picker{
+             line-height: 22px;
+            &-input{
+              font-size: 12px;
+              width: 208px;
+              height: 24px;
+            }
+           }
+        }
+        .ant-form-explain-holder{
+          line-height: 0px;
+        }
+      }
+      .button-reset {
+        font-size: 12px;
+        color: @page-color;
+        border: none;
+        box-shadow: none;
+        height: 40px;
+      }
+      .button-reset-none{
+        display: none;
+      }
+    }
+    .ant-select{
+      color: #333;
+    }
+    //table list
+    .ant-table-wrapper{
+      margin-top: 4px;
+    }
+    .ant-table,.ant-table-fixed{
+      color: @unit-color;
+
+      thead{
+        th{
+           min-width: 100px;
+           font-size: 14px;
+           font-weight: 700;
+           background: #fff;
+           white-space: nowrap;
+           text-overflow: ellipsis;
+         }
+      }
+      tbody{
+        overflow-x: auto !important;
+
+        td{
+          font-size: 12px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          .ant-btn{
+            height: 18px;
+            color: @processing-color;
+            background: none;
+            border: none;
+            font-size: 12px;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    //pagination
+    .ant-pagination {
+      margin: 24px 0 0;
+      font-size: 12px;
+        &-total-text {
+          position: absolute;
+          left: 0;
+          line-height: 28px;
+          color: @page-color;
+          .mt-show-total{
+         &-txt{
+            //margin-right: 20px;
+          }
+          &-page{
+            &-select{
+              &::before {
+                content: '每页显示：';
+                display:inline-block;
+                font-size: 12px;
+                color: @page-color;
+              }
+              .ant-select-selection{
+                display: inline-block;
+                border: none;
+                &-selected-value{
+                   line-height: 30px;
+                }
+                .ant-select-arrow{
+                  margin-top: -7px;
+                }
+              }
+
+            }
+            .ant-select-open{
+              width: 80px!important;
+            }
+            .mt-show-total-page-select::before{
+              content:'';
+            }
+          }
+        }
+        }
+
+      &-prev,&-next{
+        a{
+            border: none;
+            svg{
+              display: none;
+            }
+            :after {
+              line-height: 28px;
+              color: @unit-color;
+            }
+          }
+      }
+      &-prev {
+        a:after {
+          content: '上一页';
+        }
+      }
+      &-next {
+        a:after {
+          content: '下一页';
+        }
+      }
+
+      &-item {
+        background: none;
+        border: none;
+        a {
+          color: @unit-color;
+        }
+      }
+      &-item{
+        a:hover{
+          border-bottom: 1px solid @unit-color;
+        }
+      }
+
+      &-item-active {
+        a {
+          color: @primary-color;
+        }
+      }
+
+      .ant-select-selection__rendered {
+        line-height: 28px;
+        padding-right: 10px;
+      }
+    }
+
+    &-action {
+      margin-bottom: 16px;
+    }
+  }
+}

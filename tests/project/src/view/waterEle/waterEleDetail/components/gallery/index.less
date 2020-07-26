@@ -1,0 +1,31 @@
+
+.gallery{
+    position: relative;
+    background: #fff;
+    .gallery-inner{
+        border:'1px solid #999';
+        overflow:hidden;
+        position: relative;
+        height: 640px;
+        text-align: center;
+        img{
+            width: 800px;
+        }
+    }
+    .tool-bar{
+        position: absolute;
+        left: 41%;
+        bottom: 10%;
+        background-color:@unit-color;
+        padding: 0 8px;
+        border-radius: 5px;
+        .iconfont{
+            font-size: 24px;
+            padding: 0 5px;
+            color: #fff;
+        }
+    }
+    ::selection{
+        background:transparent;
+    }
+}

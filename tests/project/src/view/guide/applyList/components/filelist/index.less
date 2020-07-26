@@ -1,0 +1,44 @@
+.file-item{
+    height: 20px;
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    a{
+        margin-left: 20px;
+    }
+}
+.file-info{
+    border-radius: 2px;
+    padding: 4px 0 4px 5px;
+    margin-right: 32px;
+    display: inline-block;
+    .file-icon{
+        width: 20px;
+        display: inline-block;
+        margin-right: 13px;
+        vertical-align: middle;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .file-name{
+        display: inline-block;
+        vertical-align: middle;
+        color: #333;
+        font-size: 12px;
+    }
+}
+.file-download {
+    display: inline-block;
+    color: @primary-color;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.file-delete {
+    display: inline-block;
+    color: @primary-color;
+    font-size: 12px;
+    margin-left: 24px;
+}

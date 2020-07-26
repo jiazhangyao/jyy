@@ -1,0 +1,150 @@
+html,
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  // font-family: "PingFangSC-Regular", -apple-system, BlinkMacSystemFont,
+  //   "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  //   "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+}
+a:focus,
+input:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+  font-size: inherit;
+}
+*:focus {
+  outline: none;
+  resize: none;
+}
+input[type="button"],
+input[type="text"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+}
+input:required,
+input:invalid {
+  border: 0 none;
+  outline: 0 none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.division{
+  &:not(:last-child):after{
+    content: "·";
+    margin: 0 .5em;
+  }
+}
+
+// margin-top
+.mt-12{
+  margin-top: 12px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-22{
+  margin-top: 22px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mt-32{
+  margin-top: 32px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+
+// margin-left
+.ml-20{
+  margin-left: 20px;
+}
+.ml-24{
+  margin-left: 24px;
+}
+
+// button
+.ant-btn-primary {
+  background-color: @primary-color;
+  border-color: @primary-color;
+  font-weight: 500 !important;
+}
+.ant-btn-danger {
+  background-color: @highlight-color;
+  border-color: @highlight-color;
+  font-weight: 500 !important;
+}
