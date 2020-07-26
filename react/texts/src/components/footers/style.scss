@@ -1,0 +1,19 @@
+footer {
+    padding: 20px 20px 40px;
+    ul {
+        li {
+            float: left;
+            width: 20%;
+            text-align: center;
+            &:first-child {
+                width: 60%
+            }
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: #aaa;
+            }
+        }
+    }
+}

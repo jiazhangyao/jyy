@@ -1,0 +1,14 @@
+header {
+    ul {
+        li {
+            &:hover {
+                color: #52cbca;
+                cursor: pointer;
+            }
+        }
+    }
+    .links {
+        color: #fff!important;
+        margin-left: 20px;
+    }
+}

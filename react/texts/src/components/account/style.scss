@@ -1,0 +1,12 @@
+.account-panel {
+    ul {
+        li {
+            text-align: center;
+            &:hover {
+                background: #52cbca;
+                cursor: pointer;
+                color: '#fff'
+            }
+        }
+    }
+}
