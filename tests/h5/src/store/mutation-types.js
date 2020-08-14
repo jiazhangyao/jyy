@@ -1,0 +1,15 @@
+export const SET_TITLE = "SET_TITLE";
+export const SET_DICT = "SET_DICT";
+export const BASEINFO = "BASEINFO";
+export const SET_PARAM = "SET_PARAM";
+export const MENU = "MENU";
+export const FILEHOST = "FILEHOST"
+export const SET_USER_AGREEMENT = "SET_USER_AGREEMENT"
+export const CHANGE_USER_INFO = "CHANGE_USER_INFO"
+export const SET_TASK_ID = "SET_TASK_ID"
+export const SET_USER_ID = "SET_USER_ID"
+export const FACE_VALIDATE = "FACE_VALIDATE"
+export const FACE_VALIDATE_APPEAL = "FACE_VALIDATE_APPEAL"
+export const SET_SOURCE_FROM = "SET_SOURCE_FROM"
+export const CHANGE_FETCH_STATUS = "CHANGE_FETCH_STATUS"
+export const SET_CALLBACK = "SET_CALLBACK"

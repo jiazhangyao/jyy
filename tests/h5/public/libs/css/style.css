@@ -1,0 +1,67 @@
+center {
+    margin-top: 100px;
+}
+
+.comment_titlecss {
+    font-size: 20px;
+    clear: both
+}
+
+.comment_btncontainer {
+    text-align: center;
+    font-size: 30pt;
+    width: 100%;
+    clear: both
+}
+
+.signImagecss {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: scroll;
+    border: 1px solid rgb(229, 229, 229)
+}
+
+.tmpcanvascss {
+}
+
+.btn_orange {
+    font-size: 20pt;
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+}
+
+.signScheme {
+    position: fixed;
+    width: 200px;
+    right: 10px;
+}
+.signScheme > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 10px 0;
+    background: antiquewhite;
+    margin-top: 1px;
+    color: black;
+}
+
+.signParameter {
+    position: fixed;
+    width: 350px;
+    left: 10px;
+    background: antiquewhite;
+}
+
+.signParameter > label {
+    position: absolute;
+    left: 0;
+}
+.signParameter > input {
+    width: 170px;
+}
+.signParameter > select {
+    width: 170px;
+}
